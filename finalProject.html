@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <title>WEB-115 Final Project</title>
+<title>WEB-115 Final Project</title>
+</head>
     <style>
+        /* styling for body */
+        body {
+            background-color: #aeaeae98; /* Change to the desired background color */
+        }
         /* center text */
         .center {
             display: flex;
@@ -30,8 +35,9 @@
             /* https://www.w3schools.com/cssref/pr_margin.php */
             margin-top: 25px;
         }
-        /* for label */
+        /* for labels */
         label {
+            /* https://www.w3schools.com/cssref/pr_margin.php */
             margin-bottom: 5px;
         }
         /* alters text input */
@@ -43,23 +49,23 @@
         /* alters button input */
         /* https://www.w3schools.com/css/css_form.asp */
         input[type="button"] {
-            margin-right: 5px;
+            background-color: #0031f6;
+            color: #ffe204;
+            margin-right: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
         }
     </style>
-</head>
 <body>
     <!-- using div class to center the text -->
-    <div class="center">
-        <!-- uploading logo -->
-        <h1><img src="ppp.png"></h1>
-        <br><br>
-    </div>
-    <!-- setting up webpage banner -->
     <div class="banner">
-        <h1>Perfectly Portioned Fitness</h1>
-        <!-- name, course, section number -->
-        <p>Austin Carranza WEB.115.0006</p>
-        <h2>Build Your Meal Plan</h2>
+        <img src="ppp.png" alt="Perfectly Portioned Fitness Logo">
+        <div>
+            <h1>Perfectly Portioned Fitness</h1>
+            <!-- name, course, section number -->
+            <p>Austin Carranza WEB.115.0006</p>
+            <h2>Build Your Meal Plan</h2>
+        </div>
     </div>
 
     <form id="plan">
@@ -199,8 +205,6 @@
             <!-- webpage buttons -->
             <input type="button" id="generatePlan" value="Generate Meal Plan">
             <input type="button" id="clearPlan" value="Clear Meal Plan">
-            <input type="button" id="printPlan" value="Print Meal Plan">
-            <p>NOTE: you can download the pdf by clicking print and change destination to 'save as pdf'</p>
         </div>
     </form>
 
