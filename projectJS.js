@@ -1,6 +1,7 @@
 //
 // Austin Carranza
 // 29 April 2024
+// WEB 115 final project
 // projectJS.js
 // this javascript file is called by finalProject.html
 //
