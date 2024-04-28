@@ -12,6 +12,7 @@ document.getElementById("clearPlanner").addEventListener('click', clearPlanner);
 
 let text;
 
+// function to generate planner in new window
 function generatePlanner() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
