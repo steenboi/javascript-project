@@ -17,7 +17,8 @@ function generatePlanner() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let goal = document.getElementById("goal").value;
-
+    
+    // this conditional calls the validateEmail function
     // if email is invalid, send alert to user
     // if email is valid, this conditional will be skipped
     if (!validateEmail(email)) {
@@ -88,7 +89,7 @@ function generatePlanner() {
     text += "<h3>Email: " + email + "</h3>\n";
     text += "<h3>Goal for the Week: " + goal + "</h3>\n";
 
-    // window.print()
+    // using window.print()
     // creating a button to print generated meal plan
     // https://www.w3schools.com/js/js_output.asp
     text += "<button onclick='window.print()'>Print/Download Planner</button>\n";
@@ -122,12 +123,14 @@ function generatePlanner() {
     pop.document.close();
 }// this ends generatePlan function
 
+// function to clear the generated meal plan
 function clearPlanner() {
     // reset method
     // https://www.w3schools.com/jsref/met_form_reset.asp
     document.getElementById("form").reset();
 }
 
+// function to validate entered email address
 function validateEmail(email) {
     // https://regexr.com/3e48o
     let regex = /^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$/;
